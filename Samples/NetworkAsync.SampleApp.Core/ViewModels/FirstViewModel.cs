@@ -2,14 +2,11 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace NetworkAsync.SampleApp.Core.ViewModels
 {
-    public class FirstViewModel 
-		: MvxViewModel
+    public class FirstViewModel
+        : MvxViewModel
     {
-		private string _hello = "Hello MvvmCross";
-        public string Hello
-		{ 
-			get { return _hello; }
-			set { _hello = value; RaisePropertyChanged(() => Hello); }
-		}
+        // let's use our BookService that calls google with a search to execute
+        //IBookService 
     }
+
 }
