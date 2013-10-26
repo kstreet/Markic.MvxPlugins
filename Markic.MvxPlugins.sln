@@ -7,16 +7,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetworkAsync", "NetworkAsyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.NetworkAsync", "NetworkAsync\Cirrious.MvvmCross.Plugins.NetworkAsync\Cirrious.MvvmCross.Plugins.NetworkAsync.csproj", "{1541F5A5-74E5-49AB-ABE4-41982E963A99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.NetworkAsync.WindowsPhone", "NetworkAsync\Cirrious.MvvmCross.Plugins.NetworkAsync.WindowsPhone\Cirrious.MvvmCross.Plugins.NetworkAsync.WindowsPhone.csproj", "{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Release|x86.ActiveCfg = Release|Any CPU
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Debug|ARM.ActiveCfg = Debug|ARM
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Debug|ARM.Build.0 = Debug|ARM
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Debug|x86.ActiveCfg = Debug|x86
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Debug|x86.Build.0 = Debug|x86
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|ARM.ActiveCfg = Release|ARM
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|ARM.Build.0 = Release|ARM
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|x86.ActiveCfg = Release|x86
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -24,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D} = {70F99E38-FE1F-435C-8644-143C90FC0E26}
 		{1541F5A5-74E5-49AB-ABE4-41982E963A99} = {FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D}
+		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC} = {FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D}
 	EndGlobalSection
 EndGlobal
