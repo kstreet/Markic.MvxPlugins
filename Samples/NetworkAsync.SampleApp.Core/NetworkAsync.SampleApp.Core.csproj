@@ -48,7 +48,7 @@
     <Compile Include="Services\ISimpleRestService.cs" />
     <Compile Include="Services\SimpleRestService.cs" />
     <Compile Include="Services\VolumeInfo.cs" />
-    <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="ViewModels\BooksViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
