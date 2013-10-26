@@ -40,6 +40,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reachability\IMvxReachability.cs" />
     <Compile Include="Reachability\MvxReachabilityStatus.cs" />
+    <Compile Include="Rest\IMvxJsonRestClient.cs" />
+    <Compile Include="Rest\IMvxRestClient.cs" />
+    <Compile Include="Rest\MvxContentType.cs" />
+    <Compile Include="Rest\MvxDecodedRestResponse.cs" />
+    <Compile Include="Rest\MvxJsonRestClient.cs" />
+    <Compile Include="Rest\MvxJsonRestRequest.cs" />
+    <Compile Include="Rest\MvxKnownOptions.cs" />
+    <Compile Include="Rest\MvxMultiPartFormRestRequest.cs" />
+    <Compile Include="Rest\MvxRestClient.cs" />
+    <Compile Include="Rest\MvxRestRequest.cs" />
+    <Compile Include="Rest\MvxRestResponse.cs" />
+    <Compile Include="Rest\MvxStreamRestRequest.cs" />
+    <Compile Include="Rest\MvxStreamRestResponse.cs" />
+    <Compile Include="Rest\MvxStringRestRequest.cs" />
+    <Compile Include="Rest\MvxTextBasedRestRequest.cs" />
+    <Compile Include="Rest\MvxTextRestResponse.cs" />
+    <Compile Include="Rest\MvxVerbs.cs" />
+    <Compile Include="Rest\MvxWwwFormRestRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
