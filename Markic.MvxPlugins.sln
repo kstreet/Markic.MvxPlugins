@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{70F99E38-FE1F-435C-8644-143C90FC0E26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetworkAsync", "NetworkAsync", "{FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.NetworkAsync", "NetworkAsync\Cirrious.MvvmCross.Plugins.NetworkAsync\Cirrious.MvvmCross.Plugins.NetworkAsync.csproj", "{1541F5A5-74E5-49AB-ABE4-41982E963A99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D} = {70F99E38-FE1F-435C-8644-143C90FC0E26}
+		{1541F5A5-74E5-49AB-ABE4-41982E963A99} = {FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D}
+	EndGlobalSection
+EndGlobal
