@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cirrious.MvvmCross.Plugins.NetworkAsync.WindowsPhone", "NetworkAsync\Cirrious.MvvmCross.Plugins.NetworkAsync.WindowsPhone\Cirrious.MvvmCross.Plugins.NetworkAsync.WindowsPhone.csproj", "{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{A8E7414B-A73B-4154-9938-469D42AD4E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkAsync.SampleApp.Core", "Samples\NetworkAsync.SampleApp.Core\NetworkAsync.SampleApp.Core.csproj", "{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|ARM.Build.0 = Release|ARM
 		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|x86.ActiveCfg = Release|x86
 		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC}.Release|x86.Build.0 = Release|x86
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +59,6 @@ Global
 		{FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D} = {70F99E38-FE1F-435C-8644-143C90FC0E26}
 		{1541F5A5-74E5-49AB-ABE4-41982E963A99} = {FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D}
 		{1889C1D0-5C14-4C39-92D2-F7E816FED1BC} = {FF94E5CF-0BB1-4D90-BC4E-3986FEDDD86D}
+		{478685F0-C4FA-4C82-881D-CF3B2CFAD10D} = {A8E7414B-A73B-4154-9938-469D42AD4E0A}
 	EndGlobalSection
 EndGlobal
