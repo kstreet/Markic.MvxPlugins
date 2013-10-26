@@ -37,6 +37,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DisposableObject.cs" />
+    <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reachability\IMvxReachability.cs" />
     <Compile Include="Reachability\MvxReachabilityStatus.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="Rest\MvxTextRestResponse.cs" />
     <Compile Include="Rest\MvxVerbs.cs" />
     <Compile Include="Rest\MvxWwwFormRestRequest.cs" />
+    <Compile Include="TaskFactoryExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
