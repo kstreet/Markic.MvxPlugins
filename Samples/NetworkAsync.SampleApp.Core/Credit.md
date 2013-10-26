@@ -1,0 +1,1 @@
+﻿The code in this project is from @slodge excellent N+1 Series https://github.com/MvvmCross/NPlus1DaysOfMvvmCross/tree/master/N-06-Books and was adpated by @kcstreet for this sample.
