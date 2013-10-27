@@ -4,6 +4,6 @@ namespace NetworkAsync.SampleApp.Core.Services
 {
     public class BookSearchResult
     {
-        public List<BookSearchItem> items { get; set; }
+        public List<BookSearchItem> Items { get; set; }
     }
 }

@@ -1,4 +1,7 @@
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using Cirrious.MvvmCross.ViewModels;
 using NetworkAsync.SampleApp.Core.Services;
 
@@ -37,28 +40,6 @@ namespace NetworkAsync.SampleApp.Core.ViewModels
             }
         }
 
-        private void Update()
-        {
-            // a new search term has been set to let's ask google for results
-            // set our public IsBusy property (to fire our bounded events)
-
-            IsBusy = true;
-
-            // use the Book service to search and when a result comes back
-            // set the Results property above to the items in the result that came back
-            // for rigth now we are ignoring errors
-            _booksService.StartSearchAsync(SearchTerm,
-                result =>
-                {
-                    IsBusy = false;
-                    Results = result.items;
-                },
-                error =>
-                {
-                    IsBusy = false;
-                });
-        }
-
         // need a list to store the results in
         // we will just replace the whole list for now when results come in
         // will worry about ObservableCollections later
@@ -68,6 +49,47 @@ namespace NetworkAsync.SampleApp.Core.ViewModels
             get { return _results; }
             set { _results = value; RaisePropertyChanged(() => Results); }
         }
-    }
 
+        private async void Update()
+        {
+            // a new search term has been set so let's ask google for results
+            // set our public IsBusy property (to fire our bounded events)
+
+            IsBusy = true;
+
+            // use the Book service to search and when a result comes back
+            // set the VM's Results property above to the items in the result that came back
+            try
+            {
+                await _booksService.StartSearchAsync(SearchTerm).ContinueWith((task) => HandleSearchResult(task));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(
+                    "BooksViewModel:Update:Exception: Something went wrong in StartSearchAsync.");
+            }
+            finally
+            {
+                Debug.WriteLine("BooksViewModel:Update: finally - in the try catch...got here!");
+            }
+        }
+
+        private void HandleSearchResult(Task<BookSearchResult> task)
+        {
+            if (task.Status == TaskStatus.RanToCompletion
+                && task.Result != null)
+            {
+                Debug.WriteLine("Hey, Made it to HandleSearchResult using .ContinueWith!");
+
+                // Set bindable ViewModel properties with data returned from Search
+                Results = task.Result.Items;
+                IsBusy = false;
+            }
+            else
+            {
+                Debug.WriteLine("Ooopps! Made it back to BooksViewModel but BookSearchResult was null!");
+                IsBusy = false;
+            }
+        }
+    }
 }

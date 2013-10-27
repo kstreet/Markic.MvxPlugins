@@ -45,8 +45,6 @@
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\IBookService.cs" />
     <Compile Include="Services\ImageLinks.cs" />
-    <Compile Include="Services\ISimpleRestService.cs" />
-    <Compile Include="Services\SimpleRestService.cs" />
     <Compile Include="Services\VolumeInfo.cs" />
     <Compile Include="ViewModels\BooksViewModel.cs" />
   </ItemGroup>
@@ -72,9 +70,6 @@
       <Project>{1541f5a5-74e5-49ab-abe4-41982e963a99}</Project>
       <Name>Cirrious.MvvmCross.Plugins.NetworkAsync</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ToDo-MvvmCross\_ Core.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
